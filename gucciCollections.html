@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gucci</title>
+    <link rel="icon" type="image/png"  href="/assests/icons8-gucci-logo-50.png">
+    <link rel="stylesheet" href="collections.css">
+    <link rel="icon" type="image/png" href="/assests/">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<style>
+    .kart_system {
+        width: 500px;
+        max-height: 500px;
+        overflow: auto;
+        position: absolute;
+       right: 1%;
+        top: 10%;
+        border-radius: 20px;
+        background-color: white;
+        display: none;
+        padding: 2vw;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
+
+    .welcome {
+        display: flex;
+
+        justify-content: space-between;
+    }
+    section{
+        margin-top: 3vw;
+        width: 100%;
+        height: 100%;
+    }
+    .block{
+        width: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .elem{
+
+        width: 100%;
+        height: 120px;
+        display: flex;
+        padding: 1vw;
+
+        justify-content: space-between;
+        /* background-color: tomato; */
+        
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    #img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .purchase{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .pw{
+        display: flex;
+        gap: 20px;
+    }
+    #img>img{
+        width: 4vw;
+        height:4vw;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <!-- <div class="kart_system">
+
+        <div class="welcome">
+            Welcome to your Saved Items
+            <i class="ri-close-line" id="close"></i>
+        </div>
+        <section>
+
+            <div class="block">
+                <div class="elem">
+                   <div id="img">
+                    <img src="https://i.pinimg.com/564x/31/22/b4/3122b4952a3a149ebc86a7f5e564faeb.jpg" alt="">
+                    <p>name</p>
+                   </div>
+                    <div class="purchase">
+                       <div class="pw"> <p>$123</p>
+                        <i class="ri-delete-bin-line"></i></div>
+                        <div id="qt">
+                            <input type="number" style="width: 100px;outline: none;">
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+    </div> -->
+    <div class="loader">
+        <img src="/assests/dots-loader.gif" alt="" />
+    </div>
+
+    <div class="main">
+        <div class="heading-section">
+            <div class="navbar">
+                <div class="contact">
+                    <a id="contact" href="/contact.html">Contact Us</a>
+                </div>
+                <div class="logo">
+                    <h1>GUCCI</h1>
+                </div>
+                <div class="nav-right">
+                    <i class="ri-shopping-cart-line" id="cart"></i>
+                    <i class="ri-shopping-bag-line"></i>
+                    <i class="ri-user-3-line"></i>
+                    <i class="ri-search-line"></i>
+                </div>
+            </div>
+           w
+            <div class="sp-page">
+
+            </div>
+            <div class="footer-page">
+                <div class="footer_wrapper">
+                    <div class="hero_footer">
+                        <h3>May be we can help you</h3>
+                        <div class="lists">
+                            <a href="">Contact Us</a>
+                            <a href="">My Order</a>
+                            <a href="">FAQs</a>
+                            <a href="">Email Unscribe</a>
+                            <a href="">Sitemap</a>
+                        </div>
+                    </div>
+                    <section class="ft-section">
+                        <div class="hero_footer">
+                            <h3>The Company</h3>
+                            <div class="lists">
+                                <a href="">About Gucci</a>
+                                <a href="">My Order</a>
+                                <a href="">Code of Ethics</a>
+                                <a href="">Privacy & Cookies Policy</a>
+                                <a href="">COOKIES SETTING</a>
+                                <a href="">Coorporate Information</a>
+                            </div>
+                        </div>
+                        <div class="hero_footer">
+                            <h3>Gucci Services</h3>
+                            <div class="lists">
+                                <a href="">Discover our services</a>
+                                <a href="">Book on appointments</a>
+                                <a href="">Collect In-store</a>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="copy">
+                    © 2016 - 2022 Guccio Gucci S.p.A. - All rights reserved. SIAE LICENCE
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="kart.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

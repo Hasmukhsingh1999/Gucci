@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    div {
+        background-color: yellow;
+        width: 200px;
+        height: 159px;
+        padding: 20px;
+        float: right;
+    }
+</style>
+
+<body>
+    Mobile -
+    <input type="button" value="Add to kart" onclick="add('Mobile')" /> Laptop -
+    <input type="button" value="Add to kart" onclick="add('Laptop')" /> Tablet -
+    <input type="button" value="Add to kart" onclick="add('Tablet')" /> LED -
+    <input type="button" value="Add to kart" onclick="add('LED')" />
+
+    <div id="cart">
+        Total Item - <b id="c"></b>
+        <!-- item details -->
+        <ol id="hello"></ol>
+    </div>
+</body>
+<script>
+    var x = 0;
+    document.querySelector("#c").innerText = x;
+    function add(val) {
+        var inp = document.querySelectorAll("input").length;
+        console.log(inp);
+        document.querySelector("#hello").innerHTML += "<li>" + val + "<input type='button' value='X' onclick='remove()'> </li>";
+        x++;
+        document.querySelector("#c").innerText = x;
+    }
+    function remove() {
+        var list = document.getElementsByTagName("li");
+        for (let i = 0; i < list.length; i++) {
+            list[i].onclick = function () {
+                this.parentNode.removeChild(this);
+            }
+        }
+        x--;
+        document.querySelector("#c").innerText = x;
+    }
+</script>
+
+</html>

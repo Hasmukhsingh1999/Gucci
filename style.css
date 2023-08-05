@@ -1,0 +1,429 @@
+@font-face {
+  font-family: "Gucci";
+  src: url(/assests/GucciSansPro-Bold.woff2);
+}
+@font-face {
+  font-family: "Gucci Light";
+  src: url(/assests/GucciSansPro-Light\ \(1\).woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #0057b35a; */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.loader {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999999999;
+  /* Remove top and left, and add the following */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.loader img {
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.main {
+  width: 100%;
+  display: none;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  /* background-color: #007bff; */
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 3vw;
+  height: 80px;
+  background-color: yellow;
+}
+.contact > a {
+  text-decoration: none;
+  font-family: "Gucci Light";
+  color: black;
+}
+
+.logo > h1 {
+  font-family: "Gucci";
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.2vw;
+}
+
+.container {
+  width: 100%;
+height: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 0, 136);
+}
+.in-wrapper{
+  width: 70%;
+  height: 90%;
+  background-color: red;
+}
+.wrapper {
+  padding: 2vw;
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  /* min-height: 100%; */
+  font-family: "Gucci Light";
+  background-color: rgb(98, 255, 0);
+}
+.wrapper > a {
+  text-decoration: none;
+  color: black;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+  font-family: "Gucci Light";
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  flex-direction: column;
+  justify-content: center;
+}
+.text > h1 {
+  color: white;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999999;
+  background-color: rgba(0, 0, 0, 0.372);
+}
+.explore > a {
+  padding: 12px 22px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.inner-wrapper {
+  /* width: 80%; */
+  /* height: 90%; */
+  /* background-color: rebeccapurple; */
+}
+.page1 {
+  width: 100%;
+  max-height: 100%;
+  font-family: "Gucci Light";
+  /* background-color: rgb(25, 0, 255); */
+}
+
+.container-I {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 20px;
+  flex-wrap: wrap;
+  /* padding: 20px; */
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.price {
+  font-size: 16px;
+  color: #666;
+}
+
+.add-to-cart {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3;
+}
+
+.price > a {
+  text-decoration: none;
+}
+
+.space {
+  width: 100%;
+  height: 20vh;
+}
+
+.page2 {
+  width: 100%;
+  max-height: 100vh;
+  font-family: "Gucci Light";
+  background-color: black;
+}
+.footer_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 2vw 5vw;
+  justify-content: space-between;
+}
+.hero_footer {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.hero_footer > h3 {
+  color: #666;
+  font-size: 1vw;
+}
+.lists {
+  margin-top: 1vw;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.lists > a {
+  text-decoration: none;
+  color: white;
+}
+.lists > a:hover {
+  color: #666;
+}
+.hero_footer > h3:hover {
+  color: white;
+}
+.copy {
+  color: white;
+  padding: 2vw 5vw;
+  font-size: 0.9vw;
+}
+.ft-section {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 2vw 5vw;
+    height: 60px;
+  }
+  .contact > a {
+    text-decoration: none;
+    font-family: "Gucci Light";
+    color: black;
+    font-size: 4vw;
+  }
+  .logo > h1 {
+    font-size: 5.5vw;
+  }
+  .nav-right {
+    font-size: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .inner-wrapper {
+    width: 90%;
+    height: 80%;
+  }
+  .container {
+    height: 50%;
+  }
+  .text > h1 {
+    color: white;
+    font-size: 8vw;
+  }
+
+  .explore > a {
+    padding: 10px 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2vw;
+    text-transform: uppercase;
+  }
+  .wrapper {
+    padding: 15vw;
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: "Gucci Light";
+    margin-top: 15vw;
+    background-color: rgb(98, 255, 0);
+  }
+  .price > h1 {
+    font-size: 4vw;
+  }
+  .price > p {
+    font-size: 3vw;
+  }
+  .container-I {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
+  .footer_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 7vw;
+    justify-content: space-between;
+  }
+  .ft-section {
+    display: flex;
+    gap: 7vw;
+    margin-top: 6vw;
+  }
+  .hero_footer > h3 {
+    font-size: 4vw;
+  }
+  .lists > a {
+    font-size: 13px;
+  }
+  .copy {
+    padding: 4vw 7vw;
+    font-size: 10px;
+  }
+  .lists > a:hover {
+    color: #666;
+  }
+  .hero_footer > h3:hover {
+    color: white;
+  }
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 768px) {
+  .navbar {
+    height: 80px;
+  }
+
+  .logo > h1 {
+    font-family: "Gucci";
+  }
+
+  .nav-right {
+    font-size: 16px;
+  }
+
+  .inner-wrapper {
+    width: 90%;
+    height: 80%;
+  }
+  .container {
+    height: 50%;
+  }
+  .wrapper {
+    padding: 2vw;
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    font-family: "Gucci Light";
+    /* background-color: rgb(98, 255, 0); */
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+  .navbar {
+    height: 100px;
+  }
+
+  .nav-right {
+    font-size: 18px;
+  }
+
+  .inner-wrapper {
+    width: 90%;
+    height: 80%;
+  }
+  .container {
+    height: 50%;
+  }
+  .wrapper {
+    padding: 2vw;
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    font-family: "Gucci Light";
+    /* background-color: rgb(98, 255, 0); */
+  }
+}

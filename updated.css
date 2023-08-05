@@ -1,0 +1,509 @@
+@font-face {
+  font-family: "Gucci";
+  src: url(/assests/GucciSansPro-Bold.woff2);
+}
+
+@font-face {
+  font-family: "Gucci Light";
+  src: url(/assests/GucciSansPro-Light\ \(1\).woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-scrollbar {
+  display: none;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  font-family: "Gucci Light";
+  /* background-color: violet; */
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999999999;
+  /* Remove top and left, and add the following */
+  /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+.loader img {
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.main {
+  width: 100%;
+  display: none;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+  height: 70px;
+  /* background-color: yellow; */
+}
+
+.contact > a {
+  text-decoration: none;
+  font-family: "Gucci Light";
+  color: black;
+}
+
+.logo > h1 {
+  font-family: "Gucci";
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.2vw;
+}
+
+.container {
+  width: 100%;
+  height: calc(100% - 100px);
+  /* background-color: tomato; */
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2vw 10vw;
+  /* background-color: rgb(255, 0, 93); */
+  /* padding: 2vw 0; */
+}
+
+.swiper {
+  width: 100%;
+  /* height: 100%; */
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 99999999999;
+  color: white;
+  gap: 30px;
+}
+
+.explore > a {
+  color: black;
+  text-decoration: none;
+
+  padding: 12px 22px;
+  background-color: whitesmoke;
+}
+
+.text > h1 {
+  font-size: 3vw;
+}
+
+.page2 {
+  width: 100%;
+  max-height: 100%;
+  /* background-color: rgb(0, 102, 255); */
+  font-family: "Gucci Light";
+}
+
+.container-I {
+  display: grid;
+  padding: 3vw;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 20px;
+  flex-wrap: wrap;
+  /* padding: 20px; */
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card img {
+  width: 100%;
+  height: 60%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.price {
+  font-size: 16px;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.price>a:hover{
+  text-decoration: underline;
+}
+.load-more-button{
+  padding: 12px 22px;
+  background-color: black;
+  border: none;
+  outline: none;
+  color: white;
+}
+.add-to-cart {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3;
+}
+
+.price > a {
+  text-decoration: none;
+}
+.space {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+.space > a {
+  text-decoration: none;
+  background-color: black;
+  padding: 12px 22px;
+  color: white;
+  border-radius: 30px;
+  font-family: "Gucci Light";
+  text-transform: uppercase;
+}
+.page3 {
+  width: 100%;
+  max-height: 100vh;
+  font-family: "Gucci Light";
+  background-color: black;
+}
+.footer_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 2vw 5vw;
+  justify-content: space-between;
+}
+.hero_footer {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.hero_footer > h3 {
+  color: #666;
+  font-size: 1vw;
+}
+.lists {
+  margin-top: 1vw;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.lists > a {
+  text-decoration: none;
+  color: white;
+}
+.lists > a:hover {
+  color: #666;
+}
+.hero_footer > h3:hover {
+  color: white;
+}
+.copy {
+  color: white;
+  padding: 2vw 5vw;
+  font-size: 0.9vw;
+}
+.ft-section {
+  display: flex;
+  gap: 4vw;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0 5vw;
+    height: 60px;
+  }
+  .contact>a{
+    font-size: 3vw;
+}
+  .container {
+    width: 100%;
+    height: calc(100% - 60px);
+  }
+
+  .contact > a {
+    text-decoration: none;
+    font-family: "Gucci Light";
+    color: black;
+    font-size: 4vw;
+  }
+
+  .logo > h1 {
+    font-size: 5.5vw;
+  }
+
+  .nav-right {
+    font-size: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 3vw; */
+    padding: 2vw;
+  }
+
+  .wrp > h1 {
+    font-size: 3vw;
+  }
+
+  .wrp > p {
+    font-size: 10px;
+  }
+
+  .home {
+    height: 60vh;
+  }
+
+  .text {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .text > h1 {
+    font-size: 20px;
+  }
+
+  .explore > a {
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .wrp {
+    margin-top: 10vw;
+  }
+  .discover {
+    display: flex;
+    gap: 20px;
+  }
+  .discover > h1 {
+    font-size: 15px;
+
+    
+  }
+  .discover > p {
+    font-size: 12px;
+  }
+  .discover > a {
+    font-weight: 600;
+    padding: 10px;
+    font-size: 10px;
+    padding: 12px 22px;
+    background-color: black;
+  }
+  .container-I {
+    display: grid;
+    padding: 1vw;
+    width: 100%;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .footer_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 7vw;
+    justify-content: space-between;
+  }
+  .ft-section {
+    display: flex;
+    gap: 7vw;
+    margin-top: 6vw;
+  }
+  .hero_footer > h3 {
+    font-size: 4vw;
+  }
+  .lists > a {
+    font-size: 13px;
+  }
+  .copy {
+    padding: 4vw 7vw;
+    font-size: 10px;
+  }
+  .lists > a:hover {
+    color: #666;
+  }
+  .hero_footer > h3:hover {
+    color: white;
+  }
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 768px) {
+  .navbar {
+    height: 80px;
+  }
+
+  .logo > h1 {
+    font-family: "Gucci";
+  }
+
+  .nav-right {
+    font-size: 16px;
+  }
+
+  .container-I {
+    gap: 20px;
+    width: 100%;
+  }
+  .page2 {
+    width: 100%;
+
+    /* background-color: rgb(0, 102, 255); */
+    font-family: "Gucci Light";
+  }
+  /* .text>h1 {
+      font-size: 12px;
+    } */
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+  .navbar {
+    height: 100px;
+  }
+
+  .nav-right {
+    font-size: 18px;
+  }
+
+  .inner-wrapper {
+    width: 90%;
+    height: 80%;
+  }
+  /* .container-I {
+    display: grid;
+    padding: 1vw;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    gap: 20px;
+    flex-wrap: wrap;
+ 
+  } */
+  .container-I {
+    gap: 20px;
+    width: 100%;
+  }
+  .page2 {
+    width: 100%;
+    /* background-color: rgb(0, 102, 255); */
+    font-family: "Gucci Light";
+  }
+}
+
+.page1 {
+  width: 100%;
+  height: 40vh;
+  /* background-color: red; */
+  font-family: "Gucci Light";
+}
+
+.discover {
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#discover {
+  padding: 12px 22px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}

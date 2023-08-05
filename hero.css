@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "Gucci";
+  src: url(/assests/GucciSansPro-Bold.woff2);
+}
+@font-face {
+  font-family: "Gucci Light";
+  src: url(/assests/GucciSansPro-Light\ \(1\).woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #0057b35a; */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.loader {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999999999;
+  /* Remove top and left, and add the following */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader img {
+  height: 10%;
+  object-fit: cover; /* Make sure the image doesn't exceed the container height */
+}
+.hero__section {
+  width: 100%;
+  height: 100vh;
+  /* background-color: yellow; */
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+  height: 70px;
+  /* background-color: yellow; */
+}
+
+.contact > a {
+  text-decoration: none;
+  font-family: "Gucci Light";
+  color: black;
+}
+
+.logo > h1 {
+  font-family: "Gucci";
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.2vw;
+}
+
+.main-page {
+  width: 100%;
+  /* background-color: violet; */
+  height: calc(100% - 100px);
+}
+
+.top {
+  width: 100%;
+  height: 90%;
+  padding: 2vw;
+  /* background-color: turquoise; */
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.information-page {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  /* background-color: yellow; */
+  font-family: "Gucci Light";
+}
+.upper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vw;
+}
+.input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+.input > input {
+  padding: 12px 22px;
+  width: 40%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  /* Add the border properties below */
+  border-bottom: .9px solid #333; /* Replace #333 with your desired border color */
+}
+
+.input>button{
+  padding: 12px 22px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border:none;
+}
+.page3 {
+  width: 100%;
+  max-height: 100vh;
+  font-family: "Gucci Light";
+  background-color: black;
+}
+.footer_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 2vw 5vw;
+  justify-content: space-between;
+}
+.hero_footer {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.hero_footer > h3 {
+  color: #666;
+  font-size: 1vw;
+}
+.lists {
+  margin-top: 1vw;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.lists > a {
+  text-decoration: none;
+  color: white;
+}
+.lists > a:hover {
+  color: #666;
+}
+.hero_footer > h3:hover {
+  color: white;
+}
+.copy {
+  color: white;
+  padding: 2vw 5vw;
+  font-size: 0.9vw;
+}
+.ft-section {
+  display: flex;
+  gap: 4vw;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0 5vw;
+    height: 60px;
+  }
+  .contact>a{
+    font-size: 3vw;
+}
+  .logo > h1 {
+    font-size: 5.5vw;
+  }
+
+  .nav-right {
+    font-size: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  .footer_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 7vw;
+    justify-content: space-between;
+  }
+  .ft-section {
+    display: flex;
+    gap: 7vw;
+    margin-top: 6vw;
+  }
+  .hero_footer > h3 {
+    font-size: 4vw;
+  }
+  .lists > a {
+    font-size: 13px;
+  }
+  .copy {
+    padding: 4vw 7vw;
+    font-size: 10px;
+  }
+  .lists > a:hover {
+    color: #666;
+  }
+  .hero_footer > h3:hover {
+    color: white;
+  }
+  .upper{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+  }
+  .input > input {
+    padding: 10px 22px;
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    /* Add the border properties below */
+    border-bottom: .9px solid #333; /* Replace #333 with your desired border color */
+  }
+  .input>button{
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border:none;
+  }
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 768px) {
+  .navbar {
+    height: 80px;
+  }
+
+  .logo > h1 {
+    font-family: "Gucci";
+  }
+
+  .nav-right {
+    font-size: 16px;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+  .navbar {
+    height: 100px;
+  }
+
+  .nav-right {
+    font-size: 18px;
+  }
+}

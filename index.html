@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gucci</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="icon" type="image/png"  href="/assests/icons8-gucci-logo-50.png">
+    <link rel="stylesheet" href="updated.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="loader">
+        <img src="/assests/dots-loader.gif" alt="" />
+    </div>
+
+        <div class="main">
+            <div class="home">
+              <div class="navbar">
+                <div class="contact">
+                  <a id="contact" href="/contact.html">Contact Us</a>
+                </div>
+                <div class="logo">
+                  <h1>GUCCI</h1>
+                </div>
+                <div class="nav-right">
+                  <i class="ri-shopping-bag-line"></i>
+                  <i class="ri-user-3-line"></i>
+                  <i class="ri-search-line"></i>
+                </div>
+              </div>
+              <div class="container">
+                <div class="wrapper">
+                  <div class="swiper mySwiper">
+                    <div class="text">
+                      <h1>GUCCIACE</h1>
+                      <div class="explore">
+                        <a href="">Explore the Collections</a>
+                      </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="/assests/james-ree-ZmeFtu11Hpc-unsplash.jpg" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/assests/komarov-egor-BItOCAqPuUU-unsplash.jpg" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/assests/james-ree-ZmeFtu11Hpc-unsplash.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="page1">
+              <div class="discover">
+                <h1>GUCCI HORSEBIT 1955 </h1>
+                <p>Halle Bailey, Hanni, and Julia Garner bring a new <br> perspective to the heritage-infused bag.</p>
+                <a href="/gucciCollections.html" id="discover">Discover more</a>
+              </div>
+
+            </div>
+            <div class="page2">
+                <div class="container-I">
+                   <!-- Cards data goes here -->
+                </div>
+            </div>
+            <div class="space">
+                <a href="/gucciCollections.html" id="shop">Shop Now</a>
+            </div>
+            <div class="page3">
+                <div class="footer_wrapper">
+                    <div class="hero_footer">
+                        <h3>May be we can help you</h3>
+                        <div class="lists">
+                            <a href="">Contact Us</a>
+                            <a href="">My Order</a>
+                            <a href="">FAQs</a>
+                            <a href="">Email Unscribe</a>
+                            <a href="">Sitemap</a>
+                        </div>
+                    </div>
+                   <section class="ft-section">
+                    <div class="hero_footer">
+                        <h3>The Company</h3>
+                        <div class="lists">
+                            <a href="">About Gucci</a>
+                            <a href="">My Order</a>
+                            <a href="">Code of Ethics</a>
+                            <a href="">Privacy & Cookies Policy</a>
+                            <a href="">COOKIES SETTING</a>
+                            <a href="">Coorporate Information</a>
+                        </div>
+                    </div>
+                    <div class="hero_footer">
+                        <h3>Gucci Services</h3>
+                        <div class="lists">
+                            <a href="">Discover our services</a>
+                            <a href="">Book on appointments</a>
+                            <a href="">Collect In-store</a>
+
+                        </div>
+                    </div>
+                   </section>
+                </div>
+                <div class="copy">
+                    © 2016 - 2022 Guccio Gucci S.p.A. - All rights reserved. SIAE LICENCE
+                </div>
+
+
+            </div>
+          </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                autoplay: true,
+            });
+
+            var contactLink = document.querySelector("#contact");
+            contactLink.addEventListener("click", function (event) {
+                event.preventDefault();
+                document.querySelector(".loader").style.display = "initial";
+                setTimeout(function () {
+                    window.location.href = "/contact.html";
+                }, 1000);
+            });
+
+            var shopNow = document.querySelector("#shop");
+            shopNow.addEventListener("click",function(elem){
+                elem.preventDefault();
+                document.querySelector(".loader").style.display = "initial";
+                setTimeout(function(){
+                    window.location.href = "/gucciCollections.html";
+                },1000)
+            })
+
+            var discover = document.querySelector("#discover");
+            discover.addEventListener("click", function (e) {
+                e.preventDefault();
+                document.querySelector(".loader").style.display = "initial";
+                setTimeout(function () {
+                    window.location.href = "/gucciCollections.html";
+
+                }, 1000)
+            })
+        </script>
+        <script src="script.js"></script>
+        <script src="data.js"></script>
+</body>
+
+</html>
